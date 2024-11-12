@@ -1,0 +1,63 @@
+.cardContainer {
+    width: 100%;
+    border: 1px solid rgb(214, 213, 213);
+    color: #000000;
+    font-style: bold;
+    border-radius: 10px;
+    background: white;
+    font-size: 13px;
+    padding: 2%;
+    /* Adjusted padding for smaller screens */
+    box-shadow: #f4f5f8;
+}
+
+.cardContainer>* {
+    font-size: 17px;
+    width: 100%;
+}
+
+.showStatus {
+    position: absolute;
+    right: 0;
+    background: rgb(34, 255, 1);
+    border-radius: 50%;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.tags {
+    width: max-content;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #f4f5f8;
+    color: #7d7d7d;
+    padding: 2px 2px;
+}
+
+.cardTags {
+    align-items: center;
+    font-size: smaller;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    /* Allow tags to wrap to the next line on smaller screens */
+}
+
+.big-circle {
+    display: inline-block;
+    width: 10px; /* Adjust the size as needed */
+    height: 10px; /* Same as width for a circle */
+    border-radius: 50%;
+    background-color: rgb(155, 150, 150); /* Adjust color as needed */
+    margin-right: 8px; /* Spacing between circle and text */
+    vertical-align: middle; /* Aligns with text */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .cardContainer {
+        padding: 5%;
+        /* Adjusted padding for larger screens */
+    }
+}
